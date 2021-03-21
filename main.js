@@ -10,10 +10,13 @@ function main() {
     webPreferences: {
       nodeIntegration: true
     },
-    width: 800,
-    height: 600,
+    width: 420,
+    height: 650,
+    frame: false,
   })
 
+  // mainWindow.webContents.openDevTools(); , <= kod do włączenie devTools
+  
   // load app/index.html as the window content
   mainWindow.loadFile(path.join('app', 'index.html'));
 }
